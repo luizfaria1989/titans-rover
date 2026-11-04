@@ -1,0 +1,107 @@
+/* ==========================================================
+   Paleta Titans (roboticstitans.com.br)
+   Laranja #F15627 · Dourado #FAC938 · Vermelho #EE2B2B · Escuro #171312
+   ========================================================== */
+:root {
+  --titans-laranja: hsl(14, 88%, 55%);
+  --titans-laranja-escuro: hsl(14, 85%, 45%);
+  --titans-dourado: hsl(45, 95%, 60%);
+  --titans-vermelho: hsl(0, 85%, 55%);
+
+  /* Tons dos blocos de aviso:
+     :::note = laranja, :::tip = dourado, :::danger = vermelho */
+  --sl-hue-blue: 14;
+  --sl-hue-purple: 45;
+  --sl-hue-red: 0;
+
+  /* Tema escuro */
+  --sl-color-accent-low: hsl(14, 60%, 18%);
+  --sl-color-accent: var(--titans-laranja);
+  --sl-color-accent-high: hsl(20, 95%, 70%);
+  --sl-color-white: hsl(0, 0%, 95%);
+  --sl-color-gray-1: hsl(20, 10%, 88%);
+  --sl-color-gray-2: hsl(20, 8%, 76%);
+  --sl-color-gray-3: hsl(20, 6%, 58%);
+  --sl-color-gray-4: hsl(20, 8%, 40%);
+  --sl-color-gray-5: hsl(20, 14%, 20%);
+  --sl-color-gray-6: hsl(20, 14%, 11%);
+  --sl-color-black: hsl(20, 14%, 8%);
+}
+
+/* Tema claro */
+:root[data-theme='light'] {
+  --sl-color-accent-low: hsl(14, 90%, 92%);
+  --sl-color-accent: hsl(14, 88%, 50%);
+  --sl-color-accent-high: hsl(14, 80%, 38%);
+  --sl-color-white: hsl(20, 14%, 8%);
+  --sl-color-gray-1: hsl(20, 10%, 15%);
+  --sl-color-gray-2: hsl(20, 8%, 24%);
+  --sl-color-gray-3: hsl(20, 6%, 40%);
+  --sl-color-gray-4: hsl(20, 5%, 56%);
+  --sl-color-gray-5: hsl(20, 10%, 80%);
+  --sl-color-gray-6: hsl(20, 25%, 94%);
+  --sl-color-gray-7: hsl(20, 25%, 97%);
+  --sl-color-black: hsl(0, 0%, 100%);
+}
+
+/* Campos a preencher: escreva <mark>[texto]</mark> no Markdown */
+mark {
+  background-color: var(--sl-color-red-low);
+  color: var(--sl-color-red-high);
+  font-weight: 600;
+  padding: 0 0.25em;
+  border-radius: 0.25rem;
+}
+
+/* Fórmulas em bloco largas também rolam em telas pequenas */
+.sl-markdown-content .katex-display {
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding: 0.25rem 0;
+}
+
+/* Figuras com fundo branco ficam com cantos arredondados */
+.sl-markdown-content img {
+  border-radius: 0.5rem;
+}
+
+/* ---------- Tabelas ---------- */
+.sl-markdown-content .tabela {
+  overflow-x: auto;
+  border: 1px solid var(--sl-color-hairline-light);
+  border-radius: 0.5rem;
+}
+.sl-markdown-content .tabela table {
+  display: table;
+  width: 100%;
+  margin: 0;
+  border-collapse: collapse;
+}
+.sl-markdown-content .tabela :is(th, td) {
+  padding: 0.6rem 1rem;
+  border-bottom: 1px solid var(--sl-color-hairline-light);
+}
+.sl-markdown-content .tabela :is(th, td):first-child {
+  padding-inline-start: 1rem;
+}
+/* Cabeçalho colorido e em negrito */
+.sl-markdown-content .tabela th {
+  background-color: var(--titans-laranja-escuro);
+  color: #fff;
+  font-weight: 700;
+  border-bottom: none;
+}
+/* Primeira coluna em negrito (títulos das linhas) */
+.sl-markdown-content .tabela td:first-child {
+  font-weight: 600;
+}
+/* Linhas alternadas */
+.sl-markdown-content .tabela tbody tr:nth-child(even) {
+  background-color: var(--sl-color-bg-nav);
+}
+.sl-markdown-content .tabela tbody tr:hover {
+  background-color: color-mix(in srgb, var(--sl-color-accent) 12%, transparent);
+}
+.sl-markdown-content .tabela tbody tr:last-child td {
+  border-bottom: none;
+}
