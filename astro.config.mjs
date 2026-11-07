@@ -61,6 +61,7 @@ export default defineConfig({
         root: { label: 'Português', lang: 'pt-BR' },
       },
       customCss: ['katex/dist/katex.min.css', './src/styles/custom.css'],
+      components: { Footer: './src/components/Footer.astro' },
       // Cada grupo do menu lateral corresponde a uma pasta em src/content/docs/.
       // Para criar uma área nova, crie a pasta e adicione um bloco aqui.
       sidebar: [
@@ -68,6 +69,27 @@ export default defineConfig({
           label: 'Visão Computacional',
           items: [{ autogenerate: { directory: 'visao-computacional' } }],
         },
+        {
+          label: 'Eletrônica',
+          items: [{ autogenerate: { directory: 'eletronica' } }],
+        },
+        {
+          label: 'Software',
+          items: [{ autogenerate: { directory: 'software' } }],
+        },
+        {
+          label: 'Controle e Automação',
+          items: [{ autogenerate: { directory: 'controle-e-automacao' } }],
+        },
+        {
+          label: 'Mecânica',
+          items: [{ autogenerate: { directory: 'mecanica' } }],
+        },
+        {
+          label: 'Energia',
+          items: [{ autogenerate: { directory: 'energia' } }],
+        },
+        { slug: 'ferramentas' },
         {
           label: 'Como contribuir',
           items: [{ autogenerate: { directory: 'guias' } }],

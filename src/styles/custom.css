@@ -65,6 +65,18 @@ mark {
   border-radius: 0.5rem;
 }
 
+/* ---------- Página inicial ---------- */
+/* O hero reserva uma coluna para imagem, que não usamos. Ao lado do menu lateral
+   a área é estreita e o título quebrava: ocupa a largura toda, em letra menor. */
+@media (min-width: 50rem) {
+  [data-has-sidebar] .hero {
+    grid-template-columns: 100%;
+  }
+}
+[data-has-sidebar] .hero h1 {
+  font-size: clamp(var(--sl-text-3xl), calc(0.25rem + 3.5vw), var(--sl-text-5xl));
+}
+
 /* ---------- Tabelas ---------- */
 .sl-markdown-content .tabela {
   overflow-x: auto;
@@ -104,4 +116,13 @@ mark {
 }
 .sl-markdown-content .tabela tbody tr:last-child td {
   border-bottom: none;
+}
+/* Fotos dentro de tabelas (ex.: integrantes): tamanho fixo, recortadas em quadrado */
+.sl-markdown-content .tabela td img {
+  width: 6rem;
+  height: 6rem;
+  object-fit: cover;
+}
+.sl-markdown-content .tabela tr:has(img) td {
+  vertical-align: middle;
 }
