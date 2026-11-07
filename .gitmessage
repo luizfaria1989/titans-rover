@@ -1,0 +1,23 @@
+
+
+# Linha 1: tipo(área): o que muda, com o verbo no presente (até 72 caracteres)
+# Linha 2: em branco
+# Corpo:   por que a mudança foi feita, se não for óbvio
+# Rodapé:  Closes #123, se fechar uma issue
+#
+# Exemplo:
+#   fix(controle): corrige a inversão do sentido do motor esquerdo
+#
+#   O encoder foi montado invertido no P1 e a odometria acumulava erro.
+#
+#   Closes #12
+#
+# Tipos:
+#   feat      nova funcionalidade
+#   fix       correção de problema
+#   docs      apenas documentação
+#   refactor  muda o código sem mudar o comportamento
+#   test      testes
+#   chore     manutenção: dependências, configuração, CI
+#
+# Áreas (opcional): visao, eletronica, software, controle, mecanica, energia

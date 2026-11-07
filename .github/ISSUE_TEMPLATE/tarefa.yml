@@ -1,0 +1,46 @@
+name: Tarefa
+description: Trabalho planejado, como uma funcionalidade, montagem ou melhoria.
+labels: ["enhancement"]
+body:
+  - type: dropdown
+    id: area
+    attributes:
+      label: Área
+      options:
+        - Visão Computacional
+        - Eletrônica
+        - Software
+        - Controle e Automação
+        - Mecânica
+        - Energia
+        - Documentação
+        - Várias áreas
+    validations:
+      required: true
+  - type: textarea
+    id: objetivo
+    attributes:
+      label: Objetivo
+      description: O que precisa ser feito e por quê.
+    validations:
+      required: true
+  - type: textarea
+    id: pronto
+    attributes:
+      label: Critério de pronto
+      description: Como saber que a tarefa terminou.
+      value: |
+        - [ ]
+    validations:
+      required: true
+  - type: input
+    id: prazo
+    attributes:
+      label: Prazo
+      placeholder: DD/MM/AAAA
+  - type: textarea
+    id: dependencias
+    attributes:
+      label: Dependências
+      description: Issues, peças ou decisões que precisam vir antes.
+      placeholder: "ex.: #12, chegada do encoder"

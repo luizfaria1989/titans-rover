@@ -1,0 +1,5 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Documentação do projeto
+    url: https://luizfaria1989.github.io/titans-rover/
+    about: Consulte os estudos e guias antes de abrir uma issue.
