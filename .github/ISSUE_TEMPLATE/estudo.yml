@@ -1,0 +1,44 @@
+name: Estudo ou decisão técnica
+description: Pesquisa ou comparação de opções cujo resultado vira uma página da documentação.
+labels: ["documentation"]
+body:
+  - type: dropdown
+    id: area
+    attributes:
+      label: Área
+      options:
+        - Visão Computacional
+        - Eletrônica
+        - Software
+        - Controle e Automação
+        - Mecânica
+        - Energia
+        - Várias áreas
+    validations:
+      required: true
+  - type: textarea
+    id: pergunta
+    attributes:
+      label: Pergunta a responder
+      placeholder: "ex.: Qual modelo YOLO usar no P1?"
+    validations:
+      required: true
+  - type: textarea
+    id: contexto
+    attributes:
+      label: Contexto
+      description: Por que isso precisa ser decidido agora e quais são as restrições do rover.
+    validations:
+      required: true
+  - type: textarea
+    id: opcoes
+    attributes:
+      label: Opções a avaliar
+      placeholder: |
+        - Opção A
+        - Opção B
+  - type: textarea
+    id: criterios
+    attributes:
+      label: Critérios de decisão
+      placeholder: "ex.: custo, consumo, desempenho embarcado"
