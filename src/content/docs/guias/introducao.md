@@ -12,9 +12,14 @@ Cada área do projeto tem uma pasta dentro de `src/content/docs/` e aparece como
 | Pasta | Grupo no menu |
 | --- | --- |
 | `visao-computacional/` | Visão Computacional |
+| `eletronica/` | Eletrônica |
+| `software/` | Software |
+| `controle-e-automacao/` | Controle e Automação |
+| `mecanica/` | Mecânica |
+| `energia/` | Energia |
 | `guias/` | Como contribuir |
 
-Para criar uma área nova (por exemplo, `eletronica/`), crie a pasta e peça para alguém adicionar o grupo em `astro.config.mjs`.
+Para criar uma área nova, crie a pasta e peça para alguém adicionar o grupo em `astro.config.mjs`.
 
 ## Um documento = uma página
 
@@ -32,4 +37,5 @@ As imagens de um documento ficam na subpasta `imagens/` da área, com o nome do 
 
 | Versão | Descrição | Data da edição | Editor |
 | --- | --- | --- | --- |
-| 1.0 | Criação da página com a organização das áreas e as regras gerais. | 04/11/2026 | Luiz |
+| 0.1 | Criação da página com a organização das áreas e as regras gerais. | 04/11/2026 | [Luiz](https://github.com/luizfaria1989)  |
+| 0.2 | Inclusão das novas áreas na tabela de áreas. | 05/11/2026 | [Luiz](https://github.com/luizfaria1989)  |
